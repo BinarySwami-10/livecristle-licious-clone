@@ -440,3 +440,20 @@ footer .btn:hover {
 footer .copyright_section {
     background-color: black;
 }
+
+
+/* product page */
+
+.productdes {
+    font-size: 15px;
+}
+
+.productdes p,
+.productdes i,
+.productdes span {
+    margin-right: 5px;
+}
+
+.productdes p {
+    margin-top: 8px;
+}
