@@ -19,6 +19,25 @@ window.onscroll = () => {
     }
 }
 
+// Nav dropdown
+
+let dropdown = document.querySelector('.dropdown');
+let category = document.querySelector('.category');
+
+category.addEventListener('click', () => {
+    dropdown.classList.toggle('displaydropdown');
+});
+
+// location dropdown
+
+let locationDropdown = document.querySelector('.locationdropdown');
+let locationDiv = document.getElementById('location');
+
+locationDiv.addEventListener('click', () => {
+    locationDropdown.classList.toggle('displaylocationdropdown');
+});
+
+
 
 // footer show_more
 let showMore = document.querySelector('.show_more');
