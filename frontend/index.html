@@ -30,7 +30,7 @@
     <!-- header section starts -->
     <header>
         <div class="header-1">
-            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Eshop</a>
+            <a href="index.html" class="logo"><i class="fas fa-shopping-basket"></i>Eshop</a>
             <form action="" class="search-box-container">
                 <label for="search-box" class="fas fa-search"></label>
                 <input type="search" id="search-box" placeholder="Search for Products.">
@@ -128,7 +128,7 @@
 
 
     <section class="home" id="home">
-        <div class="d-flex justify-content-between mt-5">
+        <div class="d-flex justify-content-between mt-5 product_heading">
             <h1 class="text-center">Best Sellers</h1>
             <a href="product.html"><button class="btn btn-success rounded">Show More</button></a>
         </div>
@@ -731,11 +731,11 @@
             margin: 10,
             nav: true,
             responsive: {
-                0: {
+                375: {
                     items: 1
                 },
-                600: {
-                    items: 3
+                450: {
+                    items: 1
                 },
                 1000: {
                     items: 4

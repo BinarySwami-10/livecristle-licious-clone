@@ -210,6 +210,22 @@
                             }
                         }
                         
+                        @media screen and (max-width:1280px) {
+                            .header-1 {
+                                background: rgb(255, 255, 255);
+                                display: flex;
+                                align-items: center;
+                                padding: 1rem 8%;
+                            }
+                            .logo {
+                                font-size: 3rem;
+                                width: 150px;
+                            }
+                            .header-1 .location {
+                                width: 200px;
+                            }
+                        }
+                        
                         @media screen and (max-width:1024px) {
                             .header-1 {
                                 padding: 1rem 9%;
@@ -300,7 +316,7 @@
                             }
                         }
                         
-                        @media screen and (max-width:425px) {
+                        @media(max-width:450px) {
                             .header-1 {
                                 width: 100% !important;
                                 margin: 10px 50px;
@@ -313,15 +329,66 @@
                             .header-1 .location {
                                 display: none;
                             }
-                            @media screen and (max-width:375px) {
+                            .header-1 .login {
+                                display: none;
+                            }
+                            .header-1 .cart {
+                                display: none;
+                            }
+                            @media screen and (max-width:378px) {
                                 .header-1 {
-                                    width: 100% !important;
-                                    margin: 10px 60px;
+                                    width: 500px !important;
+                                    margin: 10px 0px;
                                 }
                                 .logo {
                                     font-size: 6rem !important;
                                     width: 200px;
                                     margin: auto;
+                                }
+                                .header-1 .location {
+                                    display: none;
+                                }
+                                .header-1 .login {
+                                    display: none;
+                                }
+                                .header-1 .cart {
+                                    display: none;
+                                }
+                            }
+                            @media screen and (max-width:320px) {
+                                .header-1 {
+                                    width: 500px !important;
+                                    margin: 10px 0px;
+                                }
+                                .logo {
+                                    font-size: 8rem !important;
+                                    width: 300px;
+                                    margin: auto;
+                                }
+                                .header-1 .search-box-container {
+                                    display: flex;
+                                    height: 6rem;
+                                    width: 80rem;
+                                    margin-left: 10px;
+                                }
+                                .header-1 .search-box-container #search-box {
+                                    height: 100%;
+                                    width: 100%;
+                                    padding-left: 3.6rem;
+                                    font-size: 1.8rem;
+                                    color: #333;
+                                    border: .1rem solid rgba(0, 0, 0, 0.3);
+                                    border-radius: 8px;
+                                }
+                                .header-1 .search-box-container label {
+                                    height: 100%;
+                                    font-size: 2.2rem !important;
+                                    line-height: 6rem;
+                                    color: #76B901;
+                                    margin-left: 10px;
+                                    position: absolute;
+                                    text-align: center;
+                                    cursor: pointer;
                                 }
                                 .header-1 .location {
                                     display: none;
@@ -420,6 +487,32 @@
                             cursor: pointer;
                             display: none;
                         }
+                        /* media queries */
+                        
+                        @media screen and (max-width:768px) {
+                            .header-2 .icons {
+                                display: none;
+                            }
+                            .header-2 .navbar a {
+                                width: 20rem;
+                                height: 10rem;
+                                margin: 5px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:450px) {
+                            .header-2 {
+                                width: 510px;
+                            }
+                            .header-2 .icons {
+                                display: none;
+                            }
+                            .header-2 .navbar a {
+                                width: 20rem;
+                                height: 10rem;
+                                margin: 5px;
+                            }
+                        }
                         
                         body {
                             height: 1200px;
@@ -486,7 +579,7 @@
                         /* home section */
                         
                         .home h1 {
-                            margin-left: 45rem;
+                            /* margin-left: 45rem; */
                             font-size: 22px;
                         }
                         
@@ -533,6 +626,32 @@
                         
                         .card-body a {
                             font-size: 15px;
+                        }
+                        /* media Queries */
+                        
+                        @media screen and(max-width:768px) {
+                            .home h1 {
+                                margin-left: 0;
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media screen and(max-width:425px) {
+                            #home {
+                                width: 100%;
+                            }
+                            .home h1 {
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media screen and(max-width:320px) {
+                            .home {
+                                width: 500px;
+                            }
+                            .home h1 {
+                                font-size: 15px;
+                            }
                         }
                         /* most popular */
                         
@@ -651,4 +770,24 @@
                         
                         .productdes p {
                             margin-top: 8px;
+                        }
+                        
+                        .img_div img {
+                            width: 350px;
+                        }
+                        
+                        .pagination li {
+                            font-size: 15px;
+                            margin: 5px;
+                        }
+                        
+                        .pagination li a {
+                            color: #00642a;
+                        }
+                        /* Media Queries */
+                        
+                        @media screen and(max-width:768px) {
+                            .img_div img {
+                                width: 100px !important;
+                            }
                         }
