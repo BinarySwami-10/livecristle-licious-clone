@@ -1,0 +1,36 @@
+{
+  "cwd": "C:\\Users\\User\\Desktop\\COMPANY_WORKSPACES\\livecristle\\framework7-liciousclone",
+  "type": [
+    "web",
+    "cordova"
+  ],
+  "name": "MeatMaster",
+  "framework": "svelte",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#007aff",
+    "darkTheme": true,
+    "iconFonts": true,
+    "fillBars": true
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.meatmaster",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android",
+      "electron"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen",
+      "cordova-plugin-inappbrowser",
+      "cordova-plugin-file"
+    ]
+  }
+}
