@@ -201,7 +201,7 @@
     <script type="text/javascript">
       function card_generator() {
         template=`
-        <div class="col-lg-3 py-2">
+        <div class="col-lg-3 py-2 card_wrapper">
           <div class="card" style="background-image: url(./img/chicken/#VAR1);background-size: cover;">
             <div class="card-head">
             </div>
@@ -241,7 +241,6 @@
       });
     </script>
   </div>
-  <!-- Products -->
 
   <script type="text/javascript">
     function getRandomInt(min, max) {
@@ -250,6 +249,91 @@
       return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
     }
   </script>
+
+  <!-- products -->
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-day-time">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul>
+                            <li>Opening Hours: Mon - Friday: 8AM - 5PM</li>
+                            <li>Sunday: 8:00 AM - 12:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="phone-no">
+                            <a href="tel:+12 34 56 78 90">
+                              <img class="img-fluid" src="./img/icons/smartphone.png">
+                              Call +12 34 56 78 90</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    
+                    <h4>About us</h4>
+                    <p>Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Branche Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Branche  </p>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Information</h4>
+                    <ul class="address1">
+                        <li>
+                          <!-- <img src="./img/icons/location.png" alt=""> -->
+                          <i class="fa-solid fa-location-dot"></i>
+                          Lorem Ipsum 132 xyz Lorem Ipsum</li>
+                        <li>
+                          <!-- <img src="./img/icons/envelope.png" alt=""> -->
+                          <i class="fa fa-envelope"></i>
+                          <a href="mailto:#">info@test.com</a>
+                        </li>
+                        <li>
+                          <!-- <img src="./img/icons/smartphone.png" alt=""> -->
+                          <i class="fa fa-mobile" aria-hidden="true"></i> 
+                          <a href="tel:12 34 56 78 90">12 34 56 78 90</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Follow us</h4>
+                    <ul class="social-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <p class="copyright text-uppercase">Copyright © 2022
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <!-- footer -->
   <!-- Bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
