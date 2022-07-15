@@ -24,8 +24,7 @@
 </head>
 
 <body>
-  <header>
-    <!-- upper nav -->
+  <header class="container-fluid">
     <section class="d-flex">
       <div class="ps-5">
         <i class="fa-solid fa-phone"></i><a href="#">1800-313-3302</a>
@@ -45,17 +44,15 @@
       <div>
         <i class="fa-solid fa-location-dot"></i><span>562125</span>
       </div>
-
     </section>
-    <!-- upper nav -->
-
 
 
     <!-- middle nav -->
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="https://static.freshtohome.com/images/logo/2021/logo-medium.png"
-            width="100" alt=""></a>
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" width="100" alt="">
+          </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -70,46 +67,38 @@
         </div>
       </div>
     </nav>
-    <!-- middle nav -->
-
-
-    <!-- last nav -->
-    <nav class="navbar navbar-expand-lg bg-white border navbar_last">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fish & Seafood</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Poultry</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Mutton</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Steaks & Fillet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Ready To Cook</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Vegetarian</a>
-            </li>
-
-
-
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-    <!-- last nav -->
   </header>
+
+  <nav class="navbar navbar-expand-lg  border my-3" id="category-nav">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Fish & Seafood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Poultry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Mutton</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Steaks & Fillet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Ready To Cook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Vegetarian</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
   <!-- hero section -->
@@ -119,9 +108,8 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">          
-          <h1 class="position-absolute">PROMOTION 1</h1>
+          <h1 class="position-absolute"> PROMOTION 1 </h1>
           <img src="./img/banners/1.png" class=" w-100"alt="..." class="img-fluid">
-
         </div>
         <div class="swiper-slide">
           <img src="./img/banners/2.png" class="d-block w-100" alt="...">
@@ -134,9 +122,9 @@
       <div class="swiper-pagination"></div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
+<!--       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
+ -->
       <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
       <script type="text/javascript">

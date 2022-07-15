@@ -53,6 +53,10 @@ header .navbar-nav li{
       margin: 0.3em;
 }
 
+#category-nav{
+    border-radius: 3em;
+}
+
 /* hero section */
 .carousel_content i{
     font-size: 24px;
@@ -75,7 +79,7 @@ header .navbar-nav li{
 
 #feature-bar{
     /*max-height: 3em;*/
-    box-shadow: 0 0 1em #6666;
+    box-shadow: 0 0 2em #6664;
     border-radius: 1em;
 }
 
