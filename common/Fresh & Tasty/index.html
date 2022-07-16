@@ -83,22 +83,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Fish & Seafood</a>
+              <a class="nav-link" aria-current="page" href="category.html">Fish & Seafood</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Poultry</a>
+              <a class="nav-link" aria-current="page" href="category.html">Poultry</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Mutton</a>
+              <a class="nav-link" aria-current="page" href="category.html">Mutton</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Steaks & Fillet</a>
+              <a class="nav-link" aria-current="page" href="category.html">Steaks & Fillet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Ready To Cook</a>
+              <a class="nav-link" aria-current="page" href="category.html">Ready To Cook</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Vegetarian</a>
+              <a class="nav-link" aria-current="page" href="category.html">Vegetarian</a>
             </li>
 
 
@@ -194,8 +194,67 @@
 
 
   <!-- Products -->
-  <!-- <img src="./img/chicken/#VAR1" class="img-fluid" alt="..."> -->
+
+
   <div class="mx-4">
+    <div class="row" id="card-gallery">
+    </div>
+    <script type="text/javascript">
+      function card_generator() {
+        template = `
+        <div class="col-lg-3 py-2 card_wrapper">
+          <div class="card">
+            <div class="card-head">
+              <img src="./img/chicken/#VAR1" alt="" class="img-fluid">
+              
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"> Premium Tender and Antibiotic-residue-free Chicken #INDEX</h5>
+              <p class="card-text">
+              <span>
+                <s>₹#PRICE</s></span>
+                <span style="color:#3C8031">₹#DISCOUNTED_PRICE / 500g</span>
+                </p>
+                
+                <p style="font-size:14px">Best Chicken Product You will ever taste..... </p>
+
+            </div>
+          </div>
+        </div>
+        `
+        imagenames = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg"]
+        var count = 0
+        for (let i of imagenames) {
+          PRICE = getRandomInt(100, 500)
+          $('#card-gallery').append(
+            template.replace('#VAR1', i)
+              .replace('#INDEX', ++count)
+              .replace('#PRICE', PRICE)
+              .replace('#DISCOUNTED_PRICE', PRICE - PRICE / 10)
+          )
+        }
+      }
+
+      function addToCart() {
+        swal("Product Added To Cart!", "Your Meat Is added Successfully, Go To Cart to Finalize the purchase", "success");
+      }
+      $(document).ready(function () {
+        card_generator()
+
+      });
+    </script>
+  </div>
+
+  <script type="text/javascript">
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    }
+  </script>
+  <!-- <img src="./img/chicken/#VAR1" class="img-fluid" alt="..."> -->
+  <!-- <div class="mx-4">
     <div class="row" id="card-gallery" >
     </div>
     <script type="text/javascript">
@@ -248,7 +307,7 @@
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
     }
-  </script>
+  </script> -->
 
   <!-- products -->
 
